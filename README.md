@@ -1,2 +1,3 @@
 # shared-rubocop
-shared rubocop rules
+
+Default rules that should be used by every service written in ruby

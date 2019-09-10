@@ -1,0 +1,55 @@
+# this is the base rubocop yml file that should be used by every service
+# written in ruby
+#
+Bundler/OrderedGems:
+  Enabled: false
+
+# We should not align parameters.
+Layout/AlignParameters:
+  Enabled: false
+
+Layout/EmptyComment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 150
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Max: 50
+
+Metrics/LineLength:
+  Max: 120
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+# Comments may refer to certain string contents, or contain checkmarks etc.
+Style/AsciiComments:
+  Enabled: false
+
+# Daft cop. Makes code look ugly as hell for no sane reaosn.
+Style/BlockDelimiters:
+  Enabled: false
+
+# Hell no. Use compact style here.
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+# !!value is idiomatic for turning the value into a true true/false.
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
