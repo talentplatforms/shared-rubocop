@@ -24,7 +24,7 @@ Metrics/LineLength:
   Max: 120
 
 Naming/UncommunicativeMethodParamName:
-  Enabled: false
+  Enabled: true
 
 # Comments may refer to certain string contents, or contain checkmarks etc.
 Style/AsciiComments:
