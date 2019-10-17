@@ -11,8 +11,16 @@ Layout/AlignParameters:
 Layout/EmptyComment:
   Enabled: false
 
+# if we need to turn of rules, shut up about it!
+Lint/UnneededCopEnableDirective:
+  Enabled: false
+
 Metrics/AbcSize:
   Max: 150
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
 
 Metrics/ClassLength:
   Enabled: false
@@ -22,6 +30,8 @@ Metrics/CyclomaticComplexity:
 
 Metrics/LineLength:
   Max: 120
+  Exclude:
+    - spec/**/*.rb
 
 Naming/UncommunicativeMethodParamName:
   Enabled: true
