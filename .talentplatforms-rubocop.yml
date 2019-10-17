@@ -16,7 +16,7 @@ Metrics/AbcSize:
 
 Metrics/BlockLength:
   Exclude:
-    - spec/**/*.rb
+    - spec/**/*
 
 Metrics/ClassLength:
   Enabled: false
@@ -27,7 +27,7 @@ Metrics/CyclomaticComplexity:
 Metrics/LineLength:
   Max: 120
   Exclude:
-    - spec/**/*.rb
+    - spec/**/*
 
 Naming/UncommunicativeMethodParamName:
   Enabled: true
