@@ -4,12 +4,17 @@
 Bundler/OrderedGems:
   Enabled: false
 
-# We should not align parameters.
-Layout/AlignParameters:
-  Enabled: false
-
 Layout/EmptyComment:
   Enabled: false
+
+# We should not align parameters.
+Layout/ParameterAlignment:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - spec/**/*
 
 Metrics/AbcSize:
   Max: 150
@@ -24,12 +29,8 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Max: 50
 
-Metrics/LineLength:
-  Max: 120
-  Exclude:
-    - spec/**/*
 
-Naming/UncommunicativeMethodParamName:
+Naming/MethodParameterName:
   Enabled: true
 
 # Comments may refer to certain string contents, or contain checkmarks etc.
